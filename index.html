@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 19</title>
+    <style>
+        #imageMap
+        {
+            width: 500px;
+            height: 300px;
+            border: solid;
+        }
+    </style>
+</head>
+<body>
+    <!-- cach 1: it lam -->
+    <button onclick="getLocation()">Click here to get location</button>
+    <div id="info"></div>
+    <div id="imageMap"></div>
+
+    <!-- cach 2: -->
+    <h2>Insert a map to webpage:</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3192813592327!2d106.66408561428717!3d10.786840061952285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1sen!2s!4v1622004712008!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <!--  -->
+
+    <script src="http://maps.google.com/maps/api/js?sensor=false">
+
+    </script>
+
+    <script>
+        function getLocation()
+        {
+            //tao 1 doi tuong Geolocation
+            var geo = navigator.geolocation.getCurrentPosition(showPosition,errFunc,options);
+
+            function showPosition(position)
+            {
+                var lat = position.coords.latitude; //vi do
+                var long = position.coords.longitude;   //kinh do
+                document.getElementById("info").innerHTML = "Latitude: " + lat + " Longitude: " + long;
+
+                //Load Google Map
+                var coordinate = new google.maps.LatLng(lat,long);
+                var myOptions ={
+                    zoom: 10,
+                    center: coordinate,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var mymap = new google.maps.Map(document.getElementById("imageMap"), myOptions);
+
+                var marker = {
+                    position: coordinate,
+                    map: mymap,
+                    title: "My location"
+                }
+
+                var myMarker = new google.maps.Marker(marker);
+            }
+
+            var options = {
+                enableHighAccuracy: true,
+                maximumAge: 5000,
+                timeout: 6000
+                
+            }
+
+            function errFunc(error)
+            {
+                switch(error)
+                {
+                    case error.PERMISSION_DENIED:
+                        alert("You denied to get position");
+                        break;
+                    case error.POSITION_UNAVAILABLE:
+                        alert("Cannot get position");
+                        break;
+                    case error.TIMEOUT:
+                        alert ("Timeout");
+                        break;
+                }
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>
