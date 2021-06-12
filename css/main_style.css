@@ -173,25 +173,25 @@ section{
 .table_news{
     width: 100%;
 }
-.title_news{
+.title_table{
     text-align: center;
-    font-size: 35px;
+    font-size: 38px;
     font-family: cursive;
     font-weight: bold;
     color: rgb(247, 205, 15);
 
 }
-.table_news img{
+ .table_news img{
     padding: 20px;
     
 }
 
-.table_tr2  .td2{
+.table_news .table_tr2  .td2{
     font-size: 15px;
     padding: 20px;
 
 }
-.span1 {
+.table_news .span1 {
     top: 0;
     font-size: 25px;
 
@@ -211,6 +211,31 @@ section{
     text-decoration: none;    /*xóa gạch dưới*/ 
     color: blue;
 }
+
+/* ----------   table hot   ---------- */
+.table_hot{
+    width: 100%;
+}
+.table_hot tr{
+    width: 50%;
+
+}
+.table_hot img{
+    padding: 20px;
+    width: 100%;
+    border-radius: 35px;
+    
+}
+.table_sizeL img{
+    height: 450px;
+}
+.table_sizeM{
+    width: 25%;
+}
+.table_sizeL{
+    width: 50%;
+}
+
 
 /* //////////////////////////////////////////        Footer          ///////////////////////////////////////////////////// */
 .footer1{
