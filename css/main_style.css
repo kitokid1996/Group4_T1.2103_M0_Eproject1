@@ -1,0 +1,241 @@
+/* --- star --- */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* //////////////////////////////////////////        NAV          ///////////////////////////////////////////////////// */
+nav{
+    top: 0;
+    width: 100%;
+    height: 550px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-color: aquamarine;
+}
+header{
+    font-size: 25px;
+    margin-left: 35px;
+    padding:  30px auto 10px 50px ;
+    font-family: cursive;
+    color: rgb(243, 44, 44);
+    font-style: italic;
+    font-weight: bold;
+}
+.logo{
+    width: 300px;
+    height: 120px;
+    float: left;
+    margin: auto 10px;
+}
+
+/* chỉnh bao quát cả khung */ 
+.menu{
+   
+    min-height:50px;
+    width: 1300px;
+    margin: 20px 10px ;
+    font-size: 20px;
+    
+    
+}
+
+/* chỉnh li  menu lever 1 */ 
+ .menu > li {
+    list-style-type: none; /* xóa dấu chấm đầu hàng*/ 
+    position: relative;
+    border-top: groove 1px;
+}
+/* -------   Float   ------ */
+.float_left{
+    float: left;
+    display: block;
+}
+ .float_right{
+    float: right;
+    display: block;
+}
+
+/* chỉnh tag A */ 
+ .menu >li a{
+    text-decoration: none;    /*xóa gạch dưới*/ 
+    padding: 5px 20px 13px 20px;
+    line-height: 40px;
+    display: block;
+}
+
+
+
+/* chỉnh menu lever  2 */
+.menuSub {
+    
+    min-width: 200px;
+    min-height: 200px;
+    filter: drop-shadow(0 0 3px black);
+   
+
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    top: 150%;  
+}
+.menuSub > li {
+    list-style-type: none; /* xóa dấu chấm đầu hàng*/ 
+    position: relative;
+    
+}
+
+.menuSub  > li > a {
+    border-bottom: 1px groove ;
+    text-shadow: none;
+    display: block;
+    padding: 10px;
+    line-height: 40px;
+  }
+.x{
+    padding-left: 52%;
+}
+.y{
+    padding-left: 14%;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ----- Hiệu ứng ----- */
+.menu li a:hover{
+    
+    color: green;
+}
+.menu  li:hover > ul {
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+
+.menuSub  li:hover > ul {
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+    left: 101%;
+    top: 0;
+}
+
+.menu > li a::after{
+    content: "";
+    height: 5px;
+    width: 0;
+    border-radius:15px;
+    background-color: rgb(20, 179, 41);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: all 0.5s ease-in-out;
+}
+.menu > li >a:hover::after{
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.menuSub  li > a::after{
+    content: " ";
+    height: 0px;
+    width: 5px;
+    border-radius:15px;
+    background-color: rgb(20, 179, 41);
+    position: absolute;
+    top: 0% ;
+    left: 0%;
+    
+    transition: all 0.5s ease-in-out;
+}
+.menuSub  li > a:hover::after{
+   
+    height: 90%;
+}
+
+
+
+/* //////////////////////////////////////////        Section          ///////////////////////////////////////////////////// */
+
+section{
+    position: absolute;
+    margin: 5px 5%;
+    
+}
+.table_news{
+    width: 100%;
+}
+.title_news{
+    text-align: center;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: bold;
+    color: rgb(247, 205, 15);
+
+}
+.table_news img{
+    padding: 20px;
+    
+}
+
+.table_tr2  .td2{
+    font-size: 15px;
+    padding: 20px;
+
+}
+.span1 {
+    top: 0;
+    font-size: 25px;
+
+}
+
+/* --chỉnh kích cở khung  */
+.table_news .table_tr2 td{
+    width: 50%;
+}
+.table_news .table_tr3 td{
+    width: 25%;
+}
+.table_news .table_tr4 td{
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;    /*xóa gạch dưới*/ 
+    color: blue;
+}
+
+/* //////////////////////////////////////////        Footer          ///////////////////////////////////////////////////// */
+.footer1{
+    min-height: 300px;
+    background-color:rgb(250, 241, 234) ;
+    padding: 3px 0 0 15px;
+    color: black;
+}
+.table_footer{
+    width: 100%;
+    padding: 10px 20px;
+   
+}
+
+.footer2
+{
+    font-size: 17px;
+    font-weight: bold;
+    min-height: 100px;
+    background-color: rgb(255, 60, 0);
+    color: black;
+    padding: 10px 20px;
+}
+.as{
+    padding-top: 40px;
+}
