@@ -1,0 +1,58 @@
+.title_table_register                 /* tiêu đề của table */
+    {
+        text-align: center;
+        font-weight: bold;
+        color: red;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 35px;
+    }
+.table_register                /* chỉnh tổng thể table */
+    {
+        width: 500px;
+        border: double 6px black;
+        margin: 50px auto 20px;
+        border-collapse: collapse; 
+        text-align: center;
+    }
+.table_register    tr          /* chỉnh  từng hàng ngang trong table */
+    {
+        height: 50px;
+        border: 0;
+         
+    }
+.table_register    td          /* chỉnh từng Ô trong table */
+    {
+        padding-top: 2%;   
+        padding-bottom: 2%;
+    }
+#column_left                /* cột trái */
+    {
+        width: 200px;
+        height: 5px;
+        text-align: left;
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+#column_right               /* cộ phải */
+    {
+        text-align: center;
+    }
+.note                       /* số lần nhấn sai */
+    {
+        margin-bottom: 40px;
+        text-align: center;
+        color: red;
+        font-size: 18px;
+        font-weight: bold;
+        
+    }
+input:required:valid        /* màu khi nhập đúng */
+    {
+        color: green;
+        
+    }
+input:required:invalid      /* màu khi nhập sai */
+    {
+        color: red;
+    }

@@ -1,0 +1,63 @@
+
+    .table_login                /* chỉnh tổng thể table */
+{
+    background-repeat: no-repeat;
+    width: 400px;
+    border: double 6px;
+    border-collapse: collapse; 
+    text-align: center;
+    margin: 60px auto;
+}
+.title_table_login                 /* tiêu đề của table */
+{
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+    .table_login    tr          /* chỉnh  từng hàng ngang trong table */
+{
+    height: 50px;
+    border: 0;
+     
+}
+    .table_login    td          /* chỉnh từng Ô trong table */
+{
+    padding-top: 2%;   
+    padding-bottom: 2%;
+}
+    #column_left                /* cột trái */
+{
+    width: 100px;
+    height: 5px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+    #column_right               /* cộ phải */
+{
+    text-align: center;
+}
+.z
+{
+    height: 2px;
+}
+    #note                       /* số lần nhấn sai */
+{
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+    input:required:valid        /* màu khi nhập đúng */
+{
+    color: green;
+    
+}
+    input:required:invalid      /* màu khi nhập sai */
+{
+    color: red;
+}
