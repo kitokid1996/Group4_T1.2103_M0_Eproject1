@@ -43,6 +43,7 @@ nav{
    
 }
 header{
+    visibility: hidden;
     font-size: 25px;
     margin-left: 35px;
     padding:  30px auto 10px 50px ;
@@ -52,8 +53,9 @@ header{
     font-weight: bold;
 }
 .logo{
-    width: 300px;
-    height: 120px;
+    
+    width: 220px;
+    height: 100px;
     float: left;
     margin: auto 10px;
     opacity: 0.7;
@@ -61,7 +63,7 @@ header{
 
 /* chỉnh bao quát cả khung */ 
 .menu{
-   
+    margin-top: 100px;
     min-height:50px;
     width: 1300px;
     margin: 20px 10px ;

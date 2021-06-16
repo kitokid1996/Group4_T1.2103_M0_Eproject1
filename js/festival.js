@@ -2,6 +2,7 @@
 //------------------------------------------     khởi tạo data      --------------------------------------------------------
 var festiva =  [
     {
+        "id"        :"01",
         "season"    :"spring",
         "hot"       :"yes",
         "name"      :"<h2 class='name-Festival'>lễ hội đèn trời</h2>",
@@ -11,6 +12,7 @@ var festiva =  [
         "img"       :"<p>Dưới đây là các địa điểm diễn ra lễ hội thả đèn lồng ở Chiang Mai đẹp nhất để chụp ảnh: </p><p> Yee Peng Lanna Dhutanka phía sau đại học Maejo: Đây là địa điểm quen thuộc và từng nhiều lần tổ chức lễ hội thả đèn hoa đăng, với sức chứa hơn 3000 người. Lưu ý, bạn cần phải mua vé trước vì vé bán rất nhanh. </p><img src='../images/event/news1.jpg' alt='asd'><p>Yee Bành Doi Saket: Còn nếu bạn muốn ngắm đèn lồng ở bên ngoài trung tâm thành phố, hãy đến Doi Saket cách khoảng 30km. Với sức chứa 2400 người cùng không gian vùng nông thôn thanh bình. Giá vé là 90 đến 150 USD/người. </p><img src='../images/event/news3.jpg' alt=''>"
     },
     {
+        "id"        :"02",
         "season"    :"summer",
         "hot"       :"yes",
         "name"      :"<h2 class='name-Festival'>lễ hội câu cá</h2>",
@@ -105,3 +107,12 @@ function festivalCall(x)
     $("#showFestival").html(festivalEvent);
             
 }
+var Gallery =" ";
+for (var i of festiva) 
+    {  
+        Gallery +='<div class="img-Festival">'       + i.img + '</div}>'
+    }
+
+    $("#Gallery").html(Gallery);
+
+
