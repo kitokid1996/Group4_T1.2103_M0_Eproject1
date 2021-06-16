@@ -11,6 +11,9 @@
     margin-left: 10%;
     margin-bottom: 20px;
 }
+.table-season td a{
+    text-decoration: none;
+}
 .table-title-season{
     font-size: 20px;
     text-align: center;
