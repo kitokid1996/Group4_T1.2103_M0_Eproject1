@@ -1,0 +1,50 @@
+
+.season{
+    margin: 40px 5%;
+}
+.table-event{
+    width: 100%;
+    min-height: 600px;
+}
+.main-show{
+    width: 80%;
+    padding-left: 7%;
+    padding-right: 10px;
+}
+.festival-list{
+    width: 20%;
+    height: 600px;
+    position:absolute;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.festival-list ul{
+    position: absolute;
+    width: 90%;
+    border: groove  ;
+    height: 500px;
+
+}
+.festival-list ul li {
+    
+    list-style-type: none;
+    padding: 3px 5px 3px 25px;
+    margin-left: 10px;
+    border-bottom: groove;
+}
+.festival-list ul li a{
+    text-decoration: none;    /*xóa gạch dưới*/ 
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    display: block;
+}
+.hot-event{
+    float: right ;
+    padding-right: 10px;
+    filter: drop-shadow(0 0 3px red);
+    
+}
+.dow{
+    float: right;
+}
