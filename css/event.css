@@ -1,6 +1,21 @@
-
-.season{
-    margin: 40px 5%;
+.table-season{
+    width: 100% ;
+    
+}
+.table-season tr td{
+    width: 25%;
+}
+.season{    
+    border-radius: 35px;
+    margin-top: 40px ;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+.table-title-season{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: cursive;
 }
 .table-event{
     width: 100%;
