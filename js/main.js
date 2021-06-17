@@ -11,4 +11,4 @@
 
 
     // lấy giá  trị từ key counter
-    $(".view_web")  .html(localStorage.counter);
+    $(".view-web")[0].html(localStorage.counter);

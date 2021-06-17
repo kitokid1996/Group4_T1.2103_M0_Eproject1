@@ -17,6 +17,7 @@ nav{
     background-size: cover;
     
 }
+
 .search{
     
     margin: 15px 300px 10px;
@@ -269,6 +270,9 @@ footer{
     
 }
 .footer1{
+    background-image: url(../images/footer1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     min-height: 300px;
     background-color:rgb(250, 241, 234) ;
@@ -313,11 +317,11 @@ footer{
 }
 .view{
     font-size: 20px;
-    padding-top: 40px;
-    padding-right: 50px;
+    padding: 40px auto 50px ;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     color: yellow;
+    margin-left: 80px;
 }
 #mapASIA{
     width: 500px;
