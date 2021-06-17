@@ -1,11 +1,11 @@
 .table-season{
     width: 100% ;
-    
+    background-color: rgb(215, 238, 241);
 }
 .table-season tr td{
     width: 25%;
 }
-.season{    
+.season{ 
     border-radius: 35px;
     margin-top: 40px ;
     margin-left: 10%;
@@ -35,11 +35,13 @@
     position:absolute;
     margin-top: 50px;
     margin-bottom: 10px;
+    
 }
 .festival-list ul{
     position: absolute;
     width: 90%;
     border: groove  ;
+    border-radius: 15px;  
     height: 500px;
 
 }
@@ -48,7 +50,7 @@
     list-style-type: none;
     padding: 3px 5px 3px 25px;
     margin-left: 10px;
-    border-bottom: groove;
+    border-bottom: groove 0.5px;
 }
 .festival-list ul li a{
     text-decoration: none;    /*xóa gạch dưới*/ 
@@ -58,11 +60,25 @@
     display: block;
 }
 .hot-event{
+    color: black;
     float: right ;
     padding-right: 10px;
-    filter: drop-shadow(0 0 3px red);
+    animation-name: hot;
+    animation-duration: 0.4s;
+    animation-delay: 0s;
+    animation-timing-function:linear;
+    animation-direction:alternate;
+    animation-iteration-count:infinite;  /*lặp vô hạn*/
+    animation-play-state:running;
+    position: relative;
     
 }
-.dow{
-    float: right;
+.repeat-event{
+    text-align: center;
+    color: green;
+}
+@keyframes hot {
+    0% {filter: drop-shadow(0 0 3px red);}
+    50% {filter: drop-shadow(0 0 3px rgb(255, 174, 0));}
+    100% {filter: drop-shadow(0 0 3px blue);}
 }

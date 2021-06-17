@@ -10,11 +10,10 @@
 nav{
     top: 0;
     width: 100%;
-    height: 450px;
+    height: 600px;
     position: relative;
     background-repeat: no-repeat;
-    background-color: aquamarine;
-    background-image: url(../images/event/qwe.jpg);
+    background-image: url(../images/nav.jpg);
     background-size: cover;
     
 }
@@ -53,7 +52,7 @@ header{
     font-weight: bold;
 }
 .logo{
-    
+    border-radius: 10px;
     width: 220px;
     height: 100px;
     float: left;
@@ -291,43 +290,44 @@ footer{
     color: black;
     padding: 10px 20px;
 }
-.as{
+.view{
+    font-size: 20px;
     padding-top: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: yellow;
 }
 #mapASIA{
     width: 500px;
     height: 440px;
     float: right;
-    padding-right: 20px;
-
+    padding-right: 22px;
+    
 }
 
 /* ----------------------------- JAVASCRIP Festival ------------------------------ */
-#festival{
-    margin: auto 50px;
-}
-#festival p{
-    font-size: 18px;
-    padding: 5px auto;
-}
 .name-Festival{
     font-size: 45px;
     font-family:cursive;
     font-weight: bold;
     padding-top: 30px;
+    color: red;
 }
 .title-Festival{
     font-size: 33px;
     margin-bottom: 20px;
     margin-top: 50px;
 }
-#festival img{
-    
-    margin: 15px 10% 55px;
-    width: 80%;
+.meaning-Festival p , .time-Festival p , .address-Festival p , .img-Festival p{
+    font-size: 18px;
+    padding: 5px auto;
+    margin: 0 3% 5px;    
 }
-#festival .img-Festival img{
-    filter: drop-shadow(0 0 5px blue);
+
+
+.meaning-Festival img, .time-Festival img, .address-Festival img, .img-Festival img{
+    margin: 15px 5% 55px;
+    width: 80%;
 }
 
 
