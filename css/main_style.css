@@ -283,16 +283,38 @@ footer{
 
 .footer2
 {
+    width: 100%;
     font-size: 17px;
     font-weight: bold;
-    min-height: 100px;
-    background-color: rgb(255, 60, 0);
-    color: black;
+    min-height: 150px;
+    background-color: rgb(255, 123, 0);
+    color: white;
     padding: 10px 20px;
+}
+.footer2 td {
+    width: 50%;
+    margin: auto;
+}
+.footer2 td div {
+    margin-left: 23%;
+}
+.footer2 td div a img{
+    width: 10%;
+    opacity: 0.3;
+    margin-left: 20px ;
+    
+}
+.footer2 td div a img:hover{
+    opacity: 1;
+}
+.follow{
+    text-align: center;
+    color: black;
 }
 .view{
     font-size: 20px;
     padding-top: 40px;
+    padding-right: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     color: yellow;

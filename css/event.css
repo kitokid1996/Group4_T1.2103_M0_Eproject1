@@ -14,11 +14,12 @@
 .table-season td a{
     text-decoration: none;
 }
-.table-title-season{
+.table-title-season td{
     font-size: 20px;
     text-align: center;
     font-weight: bold;
     font-family: cursive;
+    padding-bottom: 10px;
 }
 .table-event{
     width: 100%;
@@ -79,6 +80,14 @@
 }
 @keyframes hot {
     0% {filter: drop-shadow(0 0 3px red);}
-    50% {filter: drop-shadow(0 0 3px rgb(255, 174, 0));}
+    50% {filter: drop-shadow(0 0 3px yellow)    ;}
     100% {filter: drop-shadow(0 0 3px blue);}
+}
+
+/* -----------  chỉnh cho 4 mùa  ----------------------------- */
+.title-content{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family:cursive;
 }
