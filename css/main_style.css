@@ -136,7 +136,7 @@ header{
 }
 
 
-/* ////////////////////////////////////////////////////////////////////////////////// */
+/* -------------------------------------------------------------------------------------------------------------------- */
 
 
 /* ----- Hiệu ứng ----- */
@@ -190,12 +190,61 @@ header{
     height: 90%;
 }
 
+/* //////////////////////////////////////////        Feedback          ///////////////////////////////////////////////////// */
+textarea{
+    resize: none;
+    width: 100%;
+    padding-left: 10px;
+}
+.foreword{
+    font-size: 18px;
+    padding: 10px 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(238, 92, 34);
+    filter: drop-shadow(0 0 2px yellow);
 
+}
+
+.table-feedback{
+    margin: auto;
+    width: 70%;
+}
+.table-feedback .title_table_feedback{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+ .table-feedback .column_right, .table-feedback .column_left{
+    padding-bottom:  15px;
+}
+.table-feedback .column_left{
+    font-weight: bold;
+    font-size: 20px;
+    width: 250px;
+}
+.table-feedback .column_right{
+
+    font-size: 17px;
+    padding-left: 20px;
+}
+.table-feedback .text-input input{
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    border: groove;
+}
+.table-feedback .commentText{
+    font-weight: bold;
+    font-size: 20px;
+}
 
 /* //////////////////////////////////////////        Section          ///////////////////////////////////////////////////// */
 
-section{
-    margin: 5px 5%;
+section {
+    margin: 10px 0%;
 }
 .table_news{
     width: 100%;
@@ -262,12 +311,102 @@ section{
 .table_sizeL{
     width: 50%;
 }
+/* ///////////////////////////////////////////     time next festival     ////////////////////////////////////////////// */
+#time-festival h2{
+    position: absolute;
+    padding-left: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: cursive;
+    color: yellow;
+}
+#time-festival{
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/time1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#time-festival #time{
+     display:flex;
+     padding-top: 233px;
+     margin-left: 300px;
+ }
+#time-festival #time div{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border: solid rgb(5, 38, 128);
+    border-radius: 50%;
+    margin: 0 5px;
+ }
+ #time-festival #time div span{
+    position: relative;
+    display:block;
+    color: rgb(255, 0, 0);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index:3;
+ }
+ .text-time{
+     font-size: 30px;
+ }
+#day, #minute, #hour, #second{
+    font-size: 60px;
+}
 
-
+#time-festival #time div{
+    position: relative;
+    margin: 0 0px 0 5;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, #0004);
+}
 /* //////////////////////////////////////////        Footer          ///////////////////////////////////////////////////// */
 footer{
     width: 100%;
     
+}
+/* ----------------    contact     ------------------------------------ */
+.footer1 .contact{
+    margin: auto;
+    font-size: 17px;
+}
+.footer1 .contact a:link{color:green;}
+.footer1 .contact a:hover{color: yellow;}
+.footer1 .via{
+    padding-left: 20px;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(230, 68, 19);
+}
+.footer1 .icon span{
+    padding-left: 40px;
+}
+
+/* ----------------    Table Footer1     ------------------------------------ */
+.footer1 .table_footer1{
+    margin-left: 20%;
+}
+.footer1 .title_table_footer1{
+    color: rgb(255, 17, 0);
+    filter: drop-shadow(0 0 2px yellow);
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.footer1 .text input{
+    width: 350px;
+    height: 35px;
+    border: groove;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+.footer1 .ok{
+    
+    margin-left: 125px;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
 }
 .footer1{
     background-image: url(../images/footer1.jpg);
@@ -280,6 +419,7 @@ footer{
     color: black;
     padding: 10px 20px;
 }
+
 .footer1 td{
     width: 33.333%;
 }  

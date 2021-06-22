@@ -8,7 +8,9 @@
     }
 .table_register                /* chỉnh tổng thể table */
     {
+        background-image: url(../images/form.png);
         width: 500px;
+        min-height: 450px;
         border: double 6px black;
         margin: 50px auto 20px;
         border-collapse: collapse; 
@@ -27,15 +29,16 @@
     }
 #column_left                /* cột trái */
     {
-        width: 200px;
+        width: 150px;
         height: 5px;
         text-align: left;
         padding-left: 20px;
-        font-size: 20px;
+        font-size: 23px;
         font-weight: bold;
     }
 #column_right               /* cộ phải */
     {
+        width: 350px;
         text-align: center;
     }
 .note                       /* số lần nhấn sai */
@@ -56,3 +59,13 @@ input:required:invalid      /* màu khi nhập sai */
     {
         color: red;
     }
+
+ #name, #phone, #address, #mail{
+    width: 250px;
+    height: 25px;
+}
+.ok, .reset{
+    width: 50px;
+    height: 40px;
+    margin-left: 20px;
+}

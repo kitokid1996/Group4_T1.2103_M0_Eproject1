@@ -1,0 +1,35 @@
+.card-pay{
+  margin: 50px auto 30px 90%;
+}
+.card-shopping{
+  font-size: 28px;
+}
+
+.show-cart li {
+    display: flex;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .card-img {
+    width: 80%;
+    margin-left: 10%;
+    align-self: center;
+  }
+.all-book li{
+  padding: 30px 2% 0;
+}
+  .product-books{
+  width: 330px;
+}
+.img-books{
+  height: 300px;
+}
+.panel-footer{
+  height: 80px;
+}
+.add-to-cart{
+  margin-top: 20px;
+}
+
+  
