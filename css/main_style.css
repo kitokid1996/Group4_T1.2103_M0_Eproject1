@@ -242,7 +242,15 @@ textarea{
 }
 
 /* //////////////////////////////////////////        Section          ///////////////////////////////////////////////////// */
-
+input:required:valid        /* màu khi nhập đúng */
+    {
+        color: green;
+        
+    }
+input:required:invalid      /* màu khi nhập sai */
+    {
+        color: red;
+    }
 section {
     margin: 10px 0%;
 }

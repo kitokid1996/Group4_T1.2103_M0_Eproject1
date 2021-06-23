@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Asia Festival Center</title>
     
     <!-- --------------------------------------------- -->
         <link rel="stylesheet" href="../css/main_style.css">
@@ -20,98 +20,8 @@
 <body>
 
 
-    <nav>
-        <div class="search float_right input-grou">
-            <input type="text"  id="search" placeholder="Search Festival of ASIA" >
-            <button><span class=" glyphicon glyphicon-search"  onclick="searchNameFestival()"> </span></button>
-        </div>
-        
-        <header>Asian-Festival</header>
-        <a href="../index.html"><img class="logo" src="../images/logo.png" alt="logo" ></a>
-        <ul class="menu">
-            <li class="float_left"><a href="../index.html">Home</a></li>
-            <li class="float_left"><a href="./event.html">Event <span class="glyphicon glyphicon-menu-down"></span></a>
-                <ul class="menuSub">
-                    <li><a href="./eventSpring.html">Spring</a></li>
-                    <li><a href="./eventSummer.html">Summer</a></li>
-                    <li><a href="./eventAutumn.html">Autumn</a></li>
-                    <li><a href="./eventWinter.html">Winter</a></li>
-                </ul>
-            </li>
-            <li class="float_left"><a href="./Books.html">Books</a></li>
-            <li class="float_left"><a href="./aboutUs.html">About Us</a></li>
-            <li class="float_left"><a href="./gallery.html">Gallery</a></li>
-            <li class="float_left"><a href="./contact.html">Contact</a></li> 
-            
-            
-            <li class="float_left"><a class="card-pay" href="#" data-toggle="modal" data-target=".Feedback">Feedback</a></li>   
-            <li class="float_right"><a href="./login.html">Login</a></li>
-            <li class="float_right"><a href="./register.html">Register</a></li>
-        </ul>
-<!-----------------------------------   feedback    -------------------------------------------------  -->
-        <form action="" onsubmit="return   feedback()">        
-            <div class="modal fade Feedback" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <br>
-                    <h5 class="modal-title foreword" id="exampleModalLabel">If you have any comments about our website, you can send your comments to us through the table below.   </h5>
-                
-                </div>
-                <div class="modal-body">
-<!-----------------------------     Form Feedback     ------------------------------>
-               
-                    <table class="table-feedback">
-                        <tr>
-         <!---->            <td class="title_table_feedback" colspan="2">Feedback</td>
-                        </tr>
-            
-                        <tr>
-        <!---->             <td class="column_left">Your Name</td>
-                            <td class="column_right text-input"> <input class="name-feedback" type="text" required placeholder="Enter Your Name "   pattern="\D{5,}" onkeyup = "return regex_name()"   ><forn id="image_name"> </forn><br><forn id="regex_name"></forn> </td>
-                        </tr>
-            
-                        <tr>
-        <!---->             <td class="column_left">Gender</td>
-                            <td class="column_right"> 
-                                <input type="radio"  name="hobF" value="male"> Male 
-                                <input type="radio"  name="hobF" value="Female"> Female 
-                            </td>
-                        </tr>
-            
-                        <tr>
-        <!---->             <td class="column_left">Email</td>
-                            <td class="column_right text-input"> <input class="mail-feedback" type="email" required placeholder="Enter Your Email"   pattern="\w{6,}@\w{4,}\.\w{2,}"   onkeyup = "return regex_email()" ><forn id="image_mail"> </forn><br><forn id="regex_mail"></forn></td>
-                        </tr>
-            
-                        <tr>
-        <!---->             <td class="column_left">Your Phone</td>
-                            <td class="column_right text-input"> <input class="phone-feedback" type="text" required placeholder="Enter Your Number Phone" pattern="\d{10,12}" onkeyup = "return regex_phone()"   ><forn id="image_phone"> </forn><br><forn id="regex_phone"></forn> </td>
-                        </tr>
+    <nav id="navsearchJS">
 
-                        <tr>
-        <!---->             <td class="commentText" colspan="2">Comment</td>
-                        </tr>
-                        <tr>
-        <!---->             <td colspan="2"><textarea name="comment" class="comment" cols="80" rows="5"></textarea></td>
-                        </tr>
-                        
-                    </table>
-                
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="feedback()">Send</button>
-                    </div>
-            
-                </div>
-            </div>
-        </div> 
-    </form>
-    
     </nav>
 <!-- ////////////////////////////////////////   Section   //////////////////////////////////////////////////////////////////////////////// -->
     <section>
@@ -125,68 +35,8 @@
 
 <!-- ///////////////////////////////////////////////   Footer   ///////////////////////////////////////////////////////////////////////// -->
 
-<footer >
+<footer id="footerJS" >
             
-    <table  class="footer1">
-        <tr>
-            <td>
-                <div class="contact ">
-                    <h2>Asia Festival Center</h2>
-                    <p><span> <strong><span class="glyphicon glyphicon-home"></span> Address: </strong>590 Cách Mạng Tháng Tám, Quận 3, TPHCM</span></p> 
-                    <p><strong>&phone; Hotline:</strong> <span>0372466447</span> </p> 
-                    <p><strong>&#9993; Email: </strong> <a class="mail" href="mailto:hoperayno039@gmail.com" style="font-size: 20px;">hoperayno039@gmail.com</a></p>
-                    <p><strong><span class="glyphicon glyphicon-globe"></span> website: </strong> <a href="../index.html" style="font-size: 20px;">ASIAFestival.com</a></p>
-                    <p><strong><span class="glyphicon glyphicon-time"></span> Center operating hours: </strong> 8:30 - 22:00 days of week</p>
-                    <p class="via"><strong>or you can contact us via</strong></p>
-                    <p class="icon"><span><a href="#"><img src="../images/IconYahoo.png" alt="" title="Yahoo"></a></span> <span><a href="#"><img src="../images/IconFB.png" alt="" title="FaceBook"></a></span></p>
-                </div>
-            </td>
-        
-            <td>
-                <form action="" onsubmit="return   footer1()">
-                    <table   class="table_footer1" >
-                        <tr> <td class="title_table_footer1" >Please leave contact information, we will contact you later</td></tr>
-            <!-- ------------------------------------------ -->
-                        <tr><td class="text"> <input class="nameFooter" type="text" required placeholder="Enter Your Name " ></td>
-                        </tr>
-           
-            <!-- ---------------------------------------------------------------------- -->
-                        <tr> 
-                            <td class="text"> <input class="emailFooter" type="email" required placeholder="Enter Your Email" ></td>
-                        </tr>
-            <!-- ----------------------------------------------------------------------------------- -->
-                        <tr>
-                            <td class="text"> <input class="phoneFooter" type="text" required placeholder="Enter Your Number Phone" ></forn> </td>
-                        </tr>
-            
-            <!-- --------------------------------------------------------------------------------------------- -->
-                        <tr><td><input class="ok" type="button"  value="OK"  onclick="footer1()"> </td></tr>
-                    </table>
-                                    
-                </form>
-            </td>
-            <td><img class="mapASIA" src="../images/map.jpg " alt="imgMap"></td>
-    </tr>
-    </table>
-
-<table class="footer2">
-    <tr>
-        <td>
-            <p class="copyRight">&copy; 2021 FESTIVAL ASIA.  ALL RIGHTS RESERVED </p>
-        </td>
-        <td>
-            <p class="follow">Follow Festival ASIA</p>
-            <div>   <!-- icon at follow    -->
-                <a href="#"><img src="../images/face.jpg" alt="icon" title="Facebook"></a>
-                <a href="#"><img src="../images/youtube.png" alt="icon" title="Youtube"></a>
-                <a href="#"><img src="../images/instargram.png" alt="icon" title="Instargram"></a>
-                <a href="#"><img src="../images/twitter.png" alt="icon" title="Twitter"></a>
-            </p><span class="view"> web visits: <span class="view-web"> </span> <span class="glyphicon glyphicon-eye-open"> </span></p>
-            </div>
-        </td>
-        
-    </tr>
-</table>
 
 </footer>
         
@@ -203,8 +53,9 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="../js/NavFooter.js"></script>
     <script src="../js/festival.js"></script>
     <script src="../js/main.js"></script>
-    
 </body>
 </html>

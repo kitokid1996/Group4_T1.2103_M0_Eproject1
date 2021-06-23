@@ -1,4 +1,4 @@
-
+///////////////////////////////////////     Tính View      //////////////////////////////////////////
     if(localStorage.view)
     {
         localStorage.view++;
@@ -10,7 +10,7 @@
     }
 
     // lấy giá  trị
-    $(".view-web").html(localStorage.view)
+    $("#view-web").html(localStorage.view)
       
     
 
