@@ -13,7 +13,7 @@ nav{
     height: 600px;
     position: relative;
     background-repeat: no-repeat;
-    background-image: url(../images/nav.jpg);
+    background-image: url(../images/Nav/nav.jpg);
     background-size: cover;
     
 }
@@ -417,7 +417,7 @@ footer{
     border-radius: 5px;
 }
 .footer1{
-    background-image: url(../images/footer1.jpg);
+    background-image: url(../images/Footer/footer1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -457,6 +457,7 @@ footer{
 .footer2 td div {
     margin-left: 23%;
 }
+
 .footer2 td div a img{
     width: 10%;
     opacity: 0.3;

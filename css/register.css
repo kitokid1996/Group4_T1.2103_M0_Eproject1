@@ -9,8 +9,9 @@
 .table_register                /* chỉnh tổng thể table */
     {
         background-image: url(../images/form.png);
-        width: 500px;
-        min-height: 450px;
+        background-size: cover;
+        width: 600px;
+        min-height: 540px;
         border: double 6px black;
         margin: 50px auto 20px;
         border-collapse: collapse; 
@@ -50,17 +51,9 @@
         font-weight: bold;
         
     }
-input:required:valid        /* màu khi nhập đúng */
-    {
-        color: green;
-        
-    }
-input:required:invalid      /* màu khi nhập sai */
-    {
-        color: red;
-    }
 
- #name, #phone, #address, #mail{
+
+ #name, #birth, #phone, #address, #mail, #pass{
     width: 250px;
     height: 25px;
 }

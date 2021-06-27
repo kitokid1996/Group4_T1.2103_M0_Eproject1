@@ -20,104 +20,20 @@
 </head>
 <body>
     
-  <nav>        
-    <header>Asian-Festival</header>
-    <a href="../index.html"><img class="logo" src="../images/logo.png" alt="logo" ></a>
-    <ul class="menu">
-        <li class="float_left"><a href="../index.html">Home</a></li>
-        <li class="float_left"><a href="./event.html">Event <span class="glyphicon glyphicon-menu-down"></span></a>
-            <ul class="menuSub">
-                <li><a href="./eventSpring.html">Spring</a></li>
-                <li><a href="./eventSummer.html">Summer</a></li>
-                <li><a href="./eventAutumn.html">Autumn</a></li>
-                <li><a href="./eventWinter.html">Winter</a></li>
-            </ul>
-        </li>
-        <li class="float_left"><a href="./Books.html">Books</a></li>
-        <li class="float_left"><a href="./aboutUs.html">About Us</a></li>
-        <li class="float_left"><a href="./gallery.html">Gallery</a></li>
-        <li class="float_left"><a href="./contact.html">Contact</a></li> 
+  <nav  id="navJS">        
         
-        
-        <li class="float_left"><a class="" href="#" data-toggle="modal" data-target=".Feedback">Feedback</a></li>   
-        <li class="float_right"><a href="./login.html">Login</a></li>
-        <li class="float_right"><a href="./register.html">Register</a></li>
-    </ul>
-<!-----------------------------------   feedback    -------------------------------------------------  -->
-    <form action="" onsubmit="return   feedback()">        
-        <div class="modal fade Feedback" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <br>
-                <h5 class="modal-title foreword" id="exampleModalLabel">If you have any comments about our website, you can send your comments to us through the table below.   </h5>
-            
-            </div>
-            <div class="modal-body">
-<!-----------------------------     Form Feedback     ------------------------------>
-           
-                <table class="table-feedback">
-                    <tr>
-     <!---->            <td class="title_table_feedback" colspan="2">Feedback</td>
-                    </tr>
-        
-                    <tr>
-    <!---->             <td class="column_left">Your Name</td>
-                        <td class="column_right text-input"> <input class="name-feedback" type="text" required placeholder="Enter Your Name "   pattern="\D{5,}" onkeyup = "return regex_name()"   ><forn id="image_name"> </forn><br><forn id="regex_name"></forn> </td>
-                    </tr>
-        
-                    <tr>
-    <!---->             <td class="column_left">Gender</td>
-                        <td class="column_right"> 
-                            <input type="radio"  name="hobF" value="male"> Male 
-                            <input type="radio"  name="hobF" value="Female"> Female 
-                        </td>
-                    </tr>
-        
-                    <tr>
-    <!---->             <td class="column_left">Email</td>
-                        <td class="column_right text-input"> <input class="mail-feedback" type="email" required placeholder="Enter Your Email"   pattern="\w{6,}@\w{4,}\.\w{2,}"   onkeyup = "return regex_email()" ><forn id="image_mail"> </forn><br><forn id="regex_mail"></forn></td>
-                    </tr>
-        
-                    <tr>
-    <!---->             <td class="column_left">Your Phone</td>
-                        <td class="column_right text-input"> <input class="phone-feedback" type="text" required placeholder="Enter Your Number Phone" pattern="\d{10,12}" onkeyup = "return regex_phone()"   ><forn id="image_phone"> </forn><br><forn id="regex_phone"></forn> </td>
-                    </tr>
-
-                    <tr>
-    <!---->             <td class="commentText" colspan="2">Comment</td>
-                    </tr>
-                    <tr>
-    <!---->             <td colspan="2"><textarea name="comment" class="comment" cols="80" rows="5"></textarea></td>
-                    </tr>
-                    
-                </table>
-            
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick="feedback()">Send</button>
-                </div>
-        
-            </div>
-        </div>
-    </div> 
-</form>
-
-</nav>
+  </nav>
 <!-- ////////////////////////////////////////   Section   //////////////////////////////////////////////////////////////////////////////// -->
     <div>
   <!-- books -->
-  <a class="card-pay" href="#"><span class="card-shopping glyphicon glyphicon-shopping-cart" data-toggle="modal" data-target="#cart"></span><sup><sup><sup class="badge"><span class="total-count"></span></sup></sup></sup></a>
-  
+          <a class="card-pay" href="##"><span class="card-shopping glyphicon glyphicon-shopping-cart" data-toggle="modal" data-target="#cart"></span><sup><sup><sup class="badge"><span class="total-count"></span></sup></sup></sup></a>
+        
   <div class="container">
     <ul class="all-book">
+
       <li class="float_left">
-        <div class="product-books panel panel-success ">    <!--trạng thái thành công-->
-          <div class="panel-heading">bàn trà</div>
+        <div class="product-books panel panel-success ">   
+          <div class="panel-heading">Festival Hue</div>
           <div class="panel-body img-books">          
               <img class="card-img" src="../images/books/book1.jpg" alt="Card image cap" height="280px">
           </div>
@@ -126,37 +42,41 @@
                   <h4 class="card-title">Đã bán: 200</h4>
                   <p class="card-text " >Price: $0.5</p>
               </div>
-              <a  href="#" data-img="../images/books/book1.jpg" data-name="sách huế" data-price="0.5" class="add-to-cart btn btn-primary float_right">Add to cart</a>
+              <a  href="#" data-image="book1" data-name="book1" data-price="12" class="add-to-cart btn btn-primary float_right">Add to cart</a>
           </div>
         </div> 
       </li>
 <!-- ------------------------    1 product     --------------------------------------------------------- -->
       <li class="float_left">
-        <div class="product-books panel panel-success ">    <!--trạng thái thành công-->
-          <div class="panel-heading">bàn trà</div>
-          <div class="panel-body img-books" >          
-              <img class="card-img" src="../images/books/book2.jpg" alt="Card image cap">
+        <div class="product-books panel panel-success ">   
+          <div class="panel-heading">Festival Hue</div>
+          <div class="panel-body img-books">          
+              <img class="card-img" src="../images/books/book1.jpg" alt="Card image cap" height="280px">
           </div>
           <div class="panel-footer">
-            <h4 class="card-title">Orange</h4>
-            <p class="card-text">Price: $0.5</p>
-            <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary  float_right">Add to cart</a>
+              <div class="float_left">
+                  <h4 class="card-title">Đã bán: 200</h4>
+                  <p class="card-text " >Price: $0.5</p>
+              </div>
+              <a  href="#" data-image="book2" data-name="book2" data-price="9" class="add-to-cart btn btn-primary float_right">Add to cart</a>
           </div>
-        </div>
+        </div> 
       </li>
 
       <li class="float_left">
-        <div class="product-books panel panel-success ">    <!--trạng thái thành công-->
-          <div class="panel-heading">bàn trà</div>
+        <div class="product-books panel panel-success ">   
+          <div class="panel-heading">Festival Hue</div>
           <div class="panel-body img-books">          
-              <img class="card-img" src="../images/books/book3.jpg" alt="Card image cap" height="280px">
+              <img class="card-img" src="../images/books/book1.jpg" alt="Card image cap" height="280px">
           </div>
           <div class="panel-footer">
-            <h4 class="card-title">Orange</h4>
-            <p class="card-text">Price: $0.5</p>
-            <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary float_right">Add to cart</a>
+              <div class="float_left">
+                  <h4 class="card-title">Đã bán: 200</h4>
+                  <p class="card-text " >Price: $0.5</p>
+              </div>
+              <a  href="#" data-image="book3" data-name="book3" data-price="10" class="add-to-cart btn btn-primary float_right">Add to cart</a>
           </div>
-        </div>
+        </div> 
       </li>
       
     </ul>
@@ -205,6 +125,8 @@
     <script src="../js/product.js"></script>
     
     <script src="../js/main.js"></script>
+
+    
     
 </body>
 </html>

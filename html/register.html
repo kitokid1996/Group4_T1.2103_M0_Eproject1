@@ -7,11 +7,11 @@
     <title>Asia Festival Center</title>
     
     <!-- --------------------------------------------- -->
-        <link rel="stylesheet" href="../css/main_style.css">
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-  theme.min.css">
+        <link rel="stylesheet" href="../css/main_style.css">
         <link rel="stylesheet" href="../css/register.css">
         <link rel="icon" href="../images/logo.png">
 
@@ -27,54 +27,53 @@
         <form action="data.html" onsubmit="return   register()">
             <table border="0"   class="table_register" >
                 <tr>
-                    <td class="title_table_register" colspan="2">Bảng Đăng ký Thành Viên</td>
+                    <td class="title_table_register" colspan="2">Member Registration Table</td>
                 </tr>
     <!-- ------------------------------------------ -->
                 <tr>
-                    <td id="column_left">Họ Và Tên</td>
-                    <td id="column_right"> <input id="name" type="text" required placeholder="nhập vào đây họ và tên"   pattern="\D{5,}" onkeyup = "return regex_name()"   ><forn id="image_name"> </forn><br><forn id="regex_name"></forn> </td>
+                    <td id="column_left">Your Name</td>
+                    <td id="column_right"> <input id="name" type="text" required placeholder="Enter Your Name"   pattern="\D{5,}" onkeyup = "return regex_name()"   ><forn id="image_name"> </forn><br><forn id="regex_name"></forn> </td>
                 </tr>
     <!-- ------------------------------------------- -->
                 <tr>
-                    <td id="column_left">Giới Tính</td>
+                    <td id="column_left">Gender</td>
                     <td id="column_right"> 
-                        <input type="radio"  name="hob" value="Nam"> Nam 
-                        <input type="radio"  name="hob" value="Nữ"> Nữ 
-                        <input type="radio"  name="hob" value="Giới Tính Thứ 3"> Giới Tính Thứ 3
+                        <input type="radio"  name="hob" value="Male"> Male
+                        <input type="radio"  name="hob" value="Female"> Female 
                     </td>
                 </tr>
     <!-- ------------------------------------------- -->
                 <tr>
-                    <td id="column_left">Ngày sinh</td>
-                    <td id="column_right"> <input id="birth" type="text" pattern="^\d{4}\/\d{1,2}\/\d{1,2}$"  onkeyup = "return regex_birth()"   ><forn id="image_birth"> </forn><br><forn id="regex_birth"></forn></td>
+                    <td id="column_left">Birthday</td>
+                    <td id="column_right"> <input id="birth" type="text" placeholder="Enter your date of birth" pattern="^\d{4}\/\d{1,2}\/\d{1,2}$"  onkeyup = "return regex_birth()"   ><forn id="image_birth"> </forn><br><forn id="regex_birth"></forn></td>
                 </tr>
     <!-- -------------------------------------------------- -->
                 <tr>
-                    <td id="column_left">Địa Chỉ</td>
-                    <td id="column_right"> <input id="address" type="text" placeholder="Nhập Vào đây Địa Chỉ" width="100" height="50" ></td>
+                    <td id="column_left">Address</td>
+                    <td id="column_right"> <input id="address" type="text" placeholder="Enter Your address" width="100" height="50" ></td>
                 </tr>
     <!-- ---------------------------------------------------------------------- -->
                 <tr>
                     <td id="column_left">Email</td>
-                    <td id="column_right"> <input id="mail" type="email" required placeholder="nhập vào đây Email của bạn"   pattern="\w{6,}@\w{4,}\.\w{2,}"   onkeyup = "return regex_email()" ><forn id="image_mail"> </forn><br><forn id="regex_mail"></forn></td>
+                    <td id="column_right"> <input id="mail" type="email" required placeholder="Enter your Email"   pattern="\w{6,}@\w{4,}\.\w{2,}"   onkeyup = "return regex_email()" ><forn id="image_mail"> </forn><br><forn id="regex_mail"></forn></td>
                 </tr>
     <!-- ----------------------------------------------------------------------------------- -->
                 <tr>
-                    <td id="column_left">Số Điện Thoại</td>
-                    <td id="column_right"> <input id="phone" type="text" required placeholder="nhập vào đây số điện thoại" pattern="\d{10,12}" onkeyup = "return regex_phone()"   ><forn id="image_phone"> </forn><br><forn id="regex_phone"></forn> </td>
+                    <td id="column_left">Phone</td>
+                    <td id="column_right"> <input id="phone" type="text" required placeholder="Enter your Phone" pattern="\d{10,12}" onkeyup = "return regex_phone()"   ><forn id="image_phone"> </forn><br><forn id="regex_phone"></forn> </td>
                 </tr>
     <!-- --------------------------------------------------------------------------------------------------------------------------- -->
                 <tr>
-                    <td id="column_left">Mật Khẩu</td>
-                    <td id="column_right"> <input id="pass" type="password" placeholder="Nhập Vào đây ..." pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[\W].*){8,}" onkeyup = "return regex_pass()"   ><forn id="image_pass"> </forn><br><forn id="regex_pass"></forn> </td>
+                    <td id="column_left">Password</td>
+                    <td id="column_right"> <input id="pass" type="password" placeholder="Enter your Password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[\W].*){8,}" onkeyup = "return regex_pass()"   ><forn id="image_pass"> </forn><br><forn id="regex_pass"></forn> </td>
                 </tr>
     <!-- --------------------------------------------------------------------------------------------- -->
                 <tr>
-                    <td colspan="2"><input type="button"    value="Đồng Ý"  onclick="login()">  <input type="reset"> </td>
+                    <td colspan="2"><input type="button"    value="OK"  onclick="register()">  <input type="Reset"> </td>
                 </tr>
             </table>
                             
-            <p class="note">Chú Ý: SĐT Là Mã Đăng Nhập Của Bạn</p>
+            <p class="note">Note: Phone number is your login code</p>
         </form>
         
 

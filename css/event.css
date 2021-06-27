@@ -30,6 +30,11 @@
     padding-left: 7%;
     padding-right: 10px;
 }
+.zone{
+    margin: 20% 35% 78% 5%;
+    font-size: 17px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .festival-list{
     width: 20%;
     height: 600px;

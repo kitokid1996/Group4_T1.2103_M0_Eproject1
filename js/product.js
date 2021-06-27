@@ -6,8 +6,9 @@ var shoppingCart = (function() {
     cart = [];
     
     // Constructor các thuôc tính của món hàng
-    function Item(name, price, count) {
+    function Item(name, image, price, count) {
       this.name = name;
+      this.image = image;
       this.price = price;
       this.count = count;
     }
@@ -36,7 +37,7 @@ var shoppingCart = (function() {
     
     // Add to cart
     // tạo ra 1 phương thức thêm hàng cho obj
-    obj.addItemToCart = function(name, price, count) { //trong phương thức này gồm 3 property là (tên, giá và số lượng)
+    obj.addItemToCart = function(name, image, price, count) { //trong phương thức này gồm 3 property là (tên, giá và số lượng)
 
       for(var item in cart) {
         if(cart[item].name === name) {
@@ -46,7 +47,7 @@ var shoppingCart = (function() {
         }
       }
       // nếu hàng chưa có trong giỏ thì sẻ tạo ra 1 đối tượng mới  và thêm vào giỏ với count ? do IT đặt
-      var item = new Item(name, price, count);
+      var item = new Item(name,image, price, count);
       cart.push(item);
       saveCart();
     }
@@ -64,9 +65,9 @@ var shoppingCart = (function() {
     // Remove item from cart
     obj.removeItemFromCart = function(name) {
         for(var item in cart) {
-          if(cart[item].name === name) {
+          if(cart[item].name == name) {
             cart[item].count --;
-            if(cart[item].count === 0) {
+            if(cart[item].count == 0) {
               cart.splice(item, 1); // món hàng tại vi5 trí  item sẽ bị xóa
             }
             break;
@@ -78,7 +79,7 @@ var shoppingCart = (function() {
     // Remove all items from cart
     obj.removeItemFromCartAll = function(name) {
       for(var item in cart) {
-        if(cart[item].name === name) {
+        if(cart[item].name == name) {
           cart.splice(item, 1);
           break;
         }
@@ -148,8 +149,9 @@ var shoppingCart = (function() {
   $('.add-to-cart').click(function(event) {
     event.preventDefault(); // preventDefault dùng để chặn chuyển trang
     var name = $(this).data('name');
+    var image = $(this).data('image');
     var price = Number($(this).data('price'));
-    shoppingCart.addItemToCart(name, price, 1);
+    shoppingCart.addItemToCart(name,image, price, 1);
     displayCart();
   });
   
@@ -165,7 +167,8 @@ var shoppingCart = (function() {
     var output = " ";
     for(var i in cartArray) {
       output += "<tr>"
-      + "<td>" + cartArray[i].name + "</td>" 
+
+      + "<td><img class='img-product' src='../images/books/"+cartArray[i].image+".jpg'></td>" 
       + "<td>(" + cartArray[i].price + "$ )</td>"
       + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
       + "<input type='number' class='item-count amount' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
