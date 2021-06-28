@@ -96,3 +96,22 @@
     font-size: 30px;
     font-family:cursive;
 }
+
+.captionF {
+    padding: 5px 300px 5px 100px; 
+    
+}
+.captionF a{
+    text-decoration: none;
+    display: block;
+}
+.captionF p{
+    color: rgb(138, 4, 247);
+ 
+}
+.caption-Festival{
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 153, 0);
+
+}

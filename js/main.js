@@ -15,7 +15,7 @@
     
 
 //////////////////////////////////////////   Đồng Hồ    ///////////////////////////////////////////////////
-        var festivalTime = new Date(2021, 05, 28).getTime() + (1000*3600*6); // time next festival
+        var festivalTime = new Date(2021, 08, 28).getTime() + (1000*3600*6); // time next festival
         var days, hours, minutes, seconds; // variables for time units
         
         getCountdown();
