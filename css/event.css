@@ -37,7 +37,7 @@
 }
 .festival-list{
     width: 25%;
-    height: 600px;
+    min-height: 900px;
     position:absolute;
     margin-top: 50px;
     margin-bottom: 10px;
@@ -48,7 +48,7 @@
     width: 90%;
     border: groove  ;
     border-radius: 15px;  
-    height: 500px;
+    min-height: 500px;
 
 }
 .festival-list ul li {
