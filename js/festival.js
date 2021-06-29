@@ -58,9 +58,25 @@ var festiva =  [
         "season"    :"spring",
         "web"       :"../festivaltext/holi_festival.html",
         "caption"   :"<h4 style='font-size: 35px; font-family: cursive;'><span style='color: rgb(255, 0, 157);'> Holi</span><span style='color: red;'> color</span><span style='color: orange;'> powder</span><span style='color: yellow;'> throwing</span><span style='color: green;'> festival</span><span style='color: blue;'> in</span><span style='color: violet;'> India</span></h4><p>During the Holi festival, Indians throw colored powder at each other to represent the freedom and class distinction that exists in society....</p>",
-        "name"      :"<h4 style='font-size: 45px; font-family: cursive;'><span style='color: rgb(255, 0, 157);'> Holi</span><span style='color: red;'> color</span><span style='color: orange;'> powder</span><span style='color: yellow;'> throwing</span><span style='color: green;'> festival</span><span style='color: blue;'> in</span><span style='color: violet;'> India</span></h4>", 
+        "name"      :"<h2 class='name-Festival'><h4 style='font-size: 45px; font-family: cursive;'><span style='color: rgb(255, 0, 157);'> Holi</span><span style='color: red;'> color</span><span style='color: orange;'> powder</span><span style='color: yellow;'> throwing</span><span style='color: green;'> festival</span><span style='color: blue;'> in</span><span style='color: violet;'> India</span></h4></h2>", 
         "content"   :"<p>During the Holi festival, Indians throw colored powder at each other to represent the freedom and class distinction that exists in society.</p><img src='../images/event/spring/holi festival/01.jpg'><p>Holi festival, also known as 'Festival of Colors' held on the full moon day of Phalgun month is one of the major and important festivals of the Indian people.</p><p>Celebrated on the full moon day of the Hindu month of Phalgun, Holi also known as the 'Festival of Colors' is one of the important festivals of India, as well as many countries with communities. Hindus live.</p><img src='../images/event/spring/holi festival/02.jpg'><p>Holi marks the end of winter and the beginning of spring with the hope of a bountiful harvest. This festival also celebrates the victory of good over evil.</p><p>Holi festival marks the beginning of spring and celebrates the victory of good over evil.</p><p style='font-size: 25px; color: green;'>Rituals and traditions during Holi</p><p>Holi is an ancient Hindi festival with many religious and cultural rituals.</p><p style='font-size: 20px;'>Preparing for Holika's pyre</p><p>Days before the festival, people start collecting wood and flammable materials for campfires at parks, community centers, areas near temples and other open spaces. On the pyre is an effigy representing Holika, who tricked Prahalad into the fire. In the house, the women prepare to cook typical holiday dishes such as gujiya, mathri, malpuas as well as many other delicious dishes for the festival</p><img src='../images/event/spring/holi festival/11.jpg'><p style='font-size: 20px;'>Holika Dahan</p><p>On the eve of the festival, usually just in time or after sunset, people gather together and light the pyre. This ritual is called Holika Dahan. The ritual symbolizes the victory of good over evil. Everyone sang and danced happily around the fire.</p><img src='../images/event/spring/holi festival/04.jpg'><p>During Holi, people throw colored powder at each other, making everyone look like a colorful painting.</p><p style='font-size: 20px;'>Have fun with colors</p><p>Holi is officially started the next morning and people play with colors. Everyone holds in their hands dry gouache or balls containing colored liquid to throw and spray color at others.</p><img src='../images/event/spring/holi festival/05.jpg'><p>These colors are traditionally blended with natural botanicals that can be easily removed such as saffron, sandalwood and rose. People come together to take part in this exciting game. By the end of the morning, everyone looks like a colorful painting. And this is the reason why Holi is also known as the 'Festival of Colors'.</p><img src='../images/event/spring/holi festival/06.jpg'><p>People gathered in groups singing and dancing while drumming and dholak. Every time the 'war' with colors is paused, everyone eats gujiya, mathri, malpuas and many other traditional dishes. Bhang, a beverage made from local herbs, is also an integral part of Holi.</p><img src='../images/event/spring/holi festival/07.jpg'><p style='font-size: 20px;'>Other variations of the festival</p><p>In the Braj region near Mathura, in northern India, the festival can last for more than a week. Here, people not only have fun with colors but also have another special day, when the men go around with their shields and the women have the right to hit their shields. with sticks. In the south of India, people worship and make offerings to Kaamadeva, the god of love in Indian mythology on the occasion of the festival.</p><img src='../images/event/spring/holi festival/08.png'><p style='font-size: 20px;'>The end of the festival day</p><p>After a day playing with colors, everyone takes a bath to clean up and put on new costumes to welcome friends and relatives over. Holi is also a festival of forgiveness and the beginning of a new beginning, with the aim of creating harmony in society, leaving behind all hatred.</p><img src='../images/event/spring/holi festival/09.jpg'><p>On this day, all hatred is left behind, all men, young and old, join together in the atmosphere of the festival.</p><p style='font-size: 20px;'>Festival Time</p><P>Holi festival is held on the full moon day in March every year. This year, Holi festival will be held on March 17. However, the festival is also celebrated a day earlier in some parts of eastern India, such as West Bengal.</P><img src='../images/event/spring/holi festival/03.png'><p style='font-size: 20px;'>Festival venue</p><p>The Colorful Festival is celebrated almost everywhere in India. The biggest festival is held in Mathura, about 4 hours from Delhi.</p>"
     },  
+    {
+        "id"        :"sp07",
+        "season"    :"spring",
+        "web"       :"../festivaltext/Impressed_with_Jeju_Daeboreum_Fire.html",
+        "caption"   :"<h4 class='caption-Festival'>Impressed with Jeju Daeboreum Fire Festival Korea</h4><p>Wishing for a bountiful harvest and a peaceful year, fortunately the people of old Jeju organized a very unique festival called Jeju Jeongwol Daeboreum Fire Festival.</p>",
+        "name"      :"<h2 class='name-Festival'>Impressed with Jeju Daeboreum Fire Festival Korea</h2>", 
+        "content"   :"<p>Wishing for a bountiful harvest and a peaceful year, fortunately the people of old Jeju organized a very unique festival called Jeju Jeongwol Daeboreum Fire Festival.</p><p>Jeju Jeongwol Daeboreum Fire Festival is a fun and epic festival of farmers and fishermen on Jeju Island. Every year, they hold this festival with the desire to pray for a bountiful harvest and a year of peace and luck</p><img src='../images/event/spring/Jeju Daeboreum Fire/01.jpg'><p>The Jeju Jeongwol Daeboreum Fire Festival takes place in the Saebyeol Oreum area on the full moon day, which falls on the 15th day of the first month of the year. When the festival takes place, farmers and residents will pray for a bountiful harvest, avoid all mishaps, and make business more prosperous than the previous year by preparing the dishes of that season, the fruits. .., and even Kim Chi to offer to the gods.</p><img src='../images/event/spring/Jeju Daeboreum Fire/02.jpg'><p>In particular, in the past, there was a custom to light a fire in the field to chase away insects that destroy crops, then feed the cows. Today, the festival also recreates the event of burning fire in the field, along with many other attractive programs such as visiting traditional weddings...</p><img src='../images/event/spring/Jeju Daeboreum Fire/03.jpg'><p>Coming to this festival, visitors will be able to participate in impressive dance performances by the flickering fire, experience the traditional life of the old Koreans and participate in farming, becoming a part of the world. become real farmers.</p><img src='../images/event/spring/Jeju Daeboreum Fire/04.jpg'><p>Jeju Jeongwol Daeboreum Fire Festival means a lot to Korean farmers and fishermen, so they have prepared carefully. When the festival was held in the field with many attractive programs, it attracted a large number of tourists to Korea at the beginning of the year.</p><img src='../images/event/spring/Jeju Daeboreum Fire/05.jpg'><p>If traveling to Korea on the occasion of the Jeju Jeongwol Daeboreum fire festival, do not miss the opportunity to participate and experience the uniqueness of this traditional festival of the people here!</p>"
+    },
+    {
+        "id"        :"sp08",
+        "season"    :"spring",
+        "web"       :"../festivaltext/.html",
+        "caption"   :"",
+        "name"      :"", 
+        "content"   :""
+    },
     {
         "id"        :"sp07",
         "season"    :"spring",
@@ -69,6 +85,31 @@ var festiva =  [
         "name"      :"", 
         "content"   :""
     },
+    {
+        "id"        :"sp07",
+        "season"    :"spring",
+        "web"       :"../festivaltext/.html",
+        "caption"   :"",
+        "name"      :"", 
+        "content"   :""
+    },
+    {
+        "id"        :"sp07",
+        "season"    :"spring",
+        "web"       :"../festivaltext/.html",
+        "caption"   :"",
+        "name"      :"", 
+        "content"   :""
+    },
+    {
+        "id"        :"sp07",
+        "season"    :"spring",
+        "web"       :"../festivaltext/.html",
+        "caption"   :"",
+        "name"      :"", 
+        "content"   :""
+    },
+    
     
 ];
 
