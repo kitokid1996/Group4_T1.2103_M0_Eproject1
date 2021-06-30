@@ -54,7 +54,7 @@
 .festival-list ul li {
     
     list-style-type: none;
-    padding: 3px 5px 3px 25px;
+    padding: 3px 10px 3px 25px;
     margin-left: 10px;
     border-bottom: groove 0.5px;
 }
@@ -102,6 +102,7 @@
     
 }
 .captionF a{
+    border-bottom: groove 0.5px ;
     text-decoration: none;
     display: block;
 }
@@ -114,4 +115,52 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(255, 153, 0);
 
+}
+/* tính like */
+#like-button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 30px;
+}
+#like-button:hover{
+    background-color: rgba(149, 155, 243, 0.849);
+
+}
+.likeYes{
+    background-color: rgb(0, 119, 255);
+    color: white;
+}
+.commentFestival{
+    margin-left: 10%;
+    font-size: 20px;
+}
+.printF{
+    width: 70%;
+    min-height: 200px;
+    border: groove;
+}
+.commentF{
+    margin-left: 10px;
+    resize: none;
+    width: 70%;
+    padding-left: 10px;
+}
+.printComment {
+    list-style-type: none;
+    
+}
+.opinion{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+#buttonComment{
+    background-color: rgb(0, 81, 255);
+    color: white;
+    float: right;
+    margin-right: 30%;
+    margin-bottom: 10px;
 }
