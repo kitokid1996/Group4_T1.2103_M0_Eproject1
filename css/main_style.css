@@ -298,6 +298,7 @@ section {
 
 /* ----------   table hot   ---------- */
 .table_hot{
+    margin-top: 150px;
     width: 100%;
 }
 .table_hot tr{
