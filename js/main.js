@@ -14,8 +14,8 @@
       
     
 
-//////////////////////////////////////////   Time Festival    ///////////////////////////////////////////////////
-        var festivalTime = new Date(2021, 10, 31).getTime() + (1000*3600*18); // time next festival
+//////////////////////////////////////////   Đồng Hồ    ///////////////////////////////////////////////////
+        var festivalTime = new Date(2021, 08, 28).getTime() + (1000*3600*6); // time next festival
         var days, hours, minutes, seconds; // variables for time units
         
         getCountdown();
@@ -123,34 +123,3 @@ function footer1()
             confirm("Your information has been sent to us\nYour Name: "+value_name+"\nGender: "+hobFeedback+"\nEmail: "+value_mail+"\nPhone: "+value_phone.replace(/...$/, 'xxx')+"\n\nYour Comment: \n"+ value_comment)
         
     }
-//////////////////////////////////    Like    /////////////////////////////////////////////////////
-    var countLike = 0;
-    $("#count-like").html(countLike)
-
-    function like(){
-        
-        if(countLike == 0)
-            {
-                countLike  = 1;
-                $("#like-button").addClass("likeYes");
-            
-
-            }
-            else{
-                 //set giá trị cho  key counter
-                 countLike  = 0;   
-                 $("#like-button").removeClass("likeYes");
-            }
-            $("#count-like").html(countLike)
-    }
-//////////////////////////////////    comment    /////////////////////////////////////////////////////
-
-    function commentF(){
-        var val_comment = $(".commentF").val();
-        if(val_comment == "")
-        {
-            return false;
-        }
-        $("#printComment").append(" <p>Your: "+ val_comment +"</p>");
-    }
-    
