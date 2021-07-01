@@ -15,7 +15,7 @@
     
 
 //////////////////////////////////////////   Time Festival    ///////////////////////////////////////////////////
-        var festivalTime = new Date(2021, 10, 31).getTime() + (1000*3600*6); // time next festival
+        var festivalTime = new Date(2021, 10, 31).getTime() + (1000*3600*18); // time next festival
         var days, hours, minutes, seconds; // variables for time units
         
         getCountdown();
@@ -151,6 +151,6 @@ function footer1()
         {
             return false;
         }
-        $("#printComment").append(" <p>"+ val_comment +"</p>");
+        $("#printComment").append(" <p>Your: "+ val_comment +"</p>");
     }
     
