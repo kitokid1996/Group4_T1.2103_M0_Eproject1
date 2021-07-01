@@ -387,6 +387,22 @@ section {
     -webkit-box-reflect: below 10px linear-gradient(transparent, #0004);
 }
 /* //////////////////////////////////////////        Footer          ///////////////////////////////////////////////////// */
+.up{
+    margin: auto;
+    opacity: 0.3;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+.up img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.up:hover{
+    opacity:0.9;
+    
+}
 footer{
     width: 100%;
     
