@@ -62,3 +62,8 @@
     height: 40px;
     margin-left: 20px;
 }
+.submitTD input{
+    width: 60px;
+    height: 30px;
+    margin: auto 10px;
+}

@@ -95,7 +95,7 @@ function    regex_pass()
             var result= patt_name.test(value_name);
             if(result == false)
             {
-                alert("bạn đã Đặt sai tên. mời bạn nhập lại.");
+                alert("you have given the wrong name. please re-enter.");
                 document.getElementById("name").focus();
                 return false;
             }
@@ -106,7 +106,7 @@ function    regex_pass()
                 result= patt_birth.test(value_birth);
             if(result == false)
             {
-                alert("bạn đã Đặt sai Ngày Sinh. mời bạn nhập lại.");
+                alert("you have set wrong Date of Birth. please re-enter.");
                 document.getElementById("birth").focus();
                 return false;   
             }
@@ -117,7 +117,7 @@ function    regex_pass()
                 result= patt_mail.test(value_mail);
             if(result == false)
             {
-                alert("bạn đã Đặt sai Email. mời bạn nhập lại.");
+                alert("you have set wrong Email. please re-enter.");
                 document.getElementById("mail").focus();
                 return false;   
             }
@@ -128,7 +128,7 @@ function    regex_pass()
                 result= patt_phone.test(value_phone);
             if(result == false)
             {
-                alert("bạn đã Đặt sai SĐT. mời bạn nhập lại.");
+                alert("you have set wrong phone number. please re-enter.");
                 document.getElementById("phone").focus();
                 return false;
             }
@@ -141,7 +141,7 @@ function    regex_pass()
                 result= patt_pass.test(value_pass);
             if(result == false)
             {
-                alert("bạn đã Đặt sai Mật Khẩu. mời bạn nhập lại.");
+                alert("you have set the wrong password. Please re-enter.");
                 document.getElementById("pass").focus();
                 return false;
             }
@@ -158,8 +158,8 @@ function    regex_pass()
 
             var value_address= document.getElementById("address").value;
 
-            confirm("Đây Là Thông Tin Của Bạn\nHọ Và Tên: "+value_name+"\nSĐT: "+value_phone.replace(/...$/, 'xxx')+"\nEmail: "+value_mail+"\nĐịa Chỉ: "+value_address+"\nNgày Sinh: "+value_birth+"\n giới tính: "+ hob)
+            confirm("This is your Info:\nYour name: "+value_name+"\nNumber Phone: "+value_phone.replace(/...$/, 'xxx')+"\nEmail: "+value_mail+"\nYour Address: "+value_address+"\nBirthday: "+value_birth+"\nGender: "+ hob)
             
-            alert("Bạn Đã Đăng Ký Thành Công \n SĐT: "+value_phone.replace(/...$/, 'xxx')+" Là Mã Đăng Nhập Của Bạn")
+            alert("You have successfully registered \nNumber Phone: "+value_phone.replace(/...$/, 'xxx')+" Is Your Login Code")
             
         }

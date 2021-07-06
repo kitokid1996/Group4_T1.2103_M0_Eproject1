@@ -40,4 +40,39 @@
   margin-top: 20px;
 }
 
+/*  ------------------------------------      Pay      ----------------------------------------------- */
+.titlePay{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+.payBook{
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 19px;
+  margin-left: 40px;
+}
+#namePay, #addressPay,#phonePay{
+  width: 60%;
+  height: 40px;
+  margin: 10px auto;
+  border-radius: 6px;
+}
+.payBook tr td select, .payBook tr td input{
+  margin-bottom: 20px  ;
+  margin-top: 13px;
+  margin-left: 15px;
+}
+.cardPay td{
+  margin: auto 30%;
+}
+.clLeft{
+  width: 30%;
+}
+.clRight{
+  width: 70%;
+}
+.totalPay{
+  font-weight: bold;
+}
   

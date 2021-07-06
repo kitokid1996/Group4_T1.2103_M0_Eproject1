@@ -24,9 +24,9 @@
 
   
 <!-- ////////////////////////////////////////   Section   //////////////////////////////////////////////////////////////////////////////// -->
-    <div>
   <!-- books -->
-          <a class="card-pay" href="##"><span class="card-shopping glyphicon glyphicon-shopping-cart" data-toggle="modal" data-target="#cart"></span><sup><sup><sup class="badge"><span class="total-count"></span></sup></sup></sup></a>
+  
+    <a class="card-pay" href="##"><span class="card-shopping glyphicon glyphicon-shopping-cart" data-toggle="modal" data-target="#cart"></span><sup><sup><sup class="badge"><span class="total-count"></span></sup></sup></sup></a>
         
   <div class="container">
     <ul class="all-book">
@@ -354,29 +354,98 @@
   <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
   
   <!-- card-shopping -->
-<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <table class="show-cart table">
-          
-        </table>
-        <div>Total price: $<span class="total-cart"></span></div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Order now</button>
-      </div>
+      <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="modal-title" id="exampleModalLabel">Cart</span>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="show-cart table">
+                
+              </table>
+              <div>Total price: <span class="total-cart"></span>$</div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" id="OrderNow" class="btn btn-primary" onclick="Order()"  data-toggle="modal" data-target="#orderTable">Order now</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      <!-- Order -->
+      <form action="">
+      <div class="modal fade" id="orderTable" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="modal-title titlePay" id="exampleModalLabel">Pay</span>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="payBook">
+                <tr>
+                  <td colspan="2"> <input id="namePay" type="text" required placeholder="Enter Your Name"   pattern="\D{5,}"> </td>
+                </tr>
+                <tr>
+                  <td colspan="2"> <input id="addressPay" type="text" placeholder="Enter Your address"  ></td>
+                </tr>
+                <tr>
+                  <td colspan="2"> <input id="phonePay" type="text" required placeholder="Enter your Phone" pattern="\d{10,12}"></td>
+                </tr>
+
+                <tr>
+                  <td class="clLeft">Please choose a delivery service</td>
+                  <td class="clRight">
+                    <select name="ship">
+                      <option value="3$" >Economical delivery service</option>
+                      <option value="4.5$">Fast delivery service</option>
+                      <option value="6$">Grab delivery service</option>
+                    </select>
+                  </td>
+                </tr>
+ 
+                <tr>
+                  <td class="clLeft">payment methods</td>
+                  <td class="clRight"> 
+                    <input type="radio"  name="payment" value="Payment via card"> Payment via card
+                    <input type="radio"  name="payment" value="Payment on delivery"> Payment on delivery 
+                  </td>
+                </tr>
+
+                <tr class="clLeft">
+                  <td colspan="2">Please select the type of card you use to pay</td>
+                </tr>
+
+                <tr >
+                  <td colspan="2" class="clLeft" >
+                    <input type="radio"  name="payment_card" value="JCB Card"> <img style="padding-right: 20px;" src="../images/books/JCB_card.png" alt="card" width="70px">
+                    <input type="radio"  name="payment_card" value="Master Card"> <img style="padding-right: 20px;" src="../images/books/master_card.png" alt="card" width="70px">
+                    <input type="radio"  name="payment_card" value="Visa Card"> <img src="../images/books/visa_card.png" alt="card" width="70px">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="totalPay" colspan="2">Total price: <span class="total-cart"></span>$</td>
+                </tr>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" id="confirm" class="btn btn-primary" onclick="pay()">confirm</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </form>
     </div>
-  </div>
-</div> 
-    </div>
+  
 <!-- ///////////////////////////////////////////////   Footer   ///////////////////////////////////////////////////////////////////////// -->
 
 <footer id="footerJS" >

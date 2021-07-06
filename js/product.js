@@ -218,4 +218,14 @@ var shoppingCart = (function() {
   });
   
   displayCart();
+
+  function Order(){
+    
+    if(shoppingCart.totalCount()===0)
+    {
+      alert("Your cart is empty!!!")
+      return false;
+    } 
+    
+  }
   
