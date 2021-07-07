@@ -182,7 +182,7 @@ var shoppingCart = (function() {
     $('.total-cart').html(shoppingCart.totalCart());
     $('.total-count').html(shoppingCart.totalCount());
   }
-
+  
 
   // tới các chức năng
   
@@ -219,6 +219,10 @@ var shoppingCart = (function() {
   
   displayCart();
 
+
+  // pay
+ 
+$(".total-cart-pay").html(totalPay)
   function Order(){
     
     if(shoppingCart.totalCount()===0)
@@ -228,4 +232,47 @@ var shoppingCart = (function() {
     } 
     
   }
+  function shiper(){
+    var ship= Number($("#ship").val());
+    var cardBook =  shoppingCart.totalCart() 
+    var totalPay = cardBook + ship
+    $("#total-cart-pay").html(totalPay)
+  }
   
+  
+  
+  
+
+  function pay(){
+    
+    var value_name= $("#namePay").val();
+    var value_address= $("#addressPay").val();
+    var value_phone= $("#phonePay").val();
+    var value_ship=$("#ship").text(textString);
+    var  payment;
+    var payment1 = document.getElementsByName("payment");
+      for(var i in payment1 )
+        {
+            if(payment1[i].checked === true  )
+            {
+                payment= document.getElementsByName("payment")[i].value;
+            }
+        }
+    var  payment_card;
+    var payment_card1 = document.getElementsByName("payment_card");
+      for(var i in payment_card1 )
+        {
+            if(payment_card1[i].checked === true  )
+            {
+                payment_card= document.getElementsByName("payment_card")[i].value;
+            }
+        }
+
+    if(payment=="Payment via card")
+      {
+        alert("Information about your order\nReceiver's information: "+value_name+" | "+value_phone + value_address+"\nDelivery service: "+value_ship+"\nThe total amount to be paid is\n"+ payment +" " + payment_card + "\nYou will receive your order in 7 days.");
+      }
+    else{
+        alert("Information about your order\nReceiver's information: "+value_name+" | "+value_phone + value_address+"\nDelivery service: "+value_ship+"\nThe total amount to be paid is\n"+ payment  + "\nYou will receive your order in 7 days.")
+    }
+  }
