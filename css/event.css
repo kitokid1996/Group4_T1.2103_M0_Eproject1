@@ -23,7 +23,7 @@
 }
 .table-event{
     width: 100%;
-    min-height: 1100px;
+    min-height: 1200px;
 }
 .main-show{
     width: 75%;
@@ -163,4 +163,31 @@
     float: right;
     margin-right: 30%;
     margin-bottom: 10px;
+}
+.responsiveFestival{
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(102, 167, 102);
+    width: 100%;
+    height: 100px;
+    visibility: hidden;
+}
+.responsiveFestival td > span{
+    color: rgb(238, 255, 0);
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.responsiveFestival select{
+    height: 50px;
+    padding-left: 10px;
+}
+
+/* //////////////////////////////////////////        responsive          ///////////////////////////////////////////////////// */
+@media screen and (max-width: 1047px) {
+    .festival-list{display: none;}
+    .main-show{
+        width: 100%;
+    }
+    .main-show h2{display: none;}
+    .responsiveFestival{visibility:visible;}
 }

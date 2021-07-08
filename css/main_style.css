@@ -211,7 +211,7 @@
     }
    
     .menuSub:hover{
-        visibility: hidden;
+        display: none;
         opacity: 0;
     }
     .menu >li a{
@@ -607,7 +607,7 @@ footer{
     
     .mapASIA{
         all: none;
-        visibility: hidden;
+        display: none;
         width: 0px;
         height: 0;
         padding: none;
@@ -624,7 +624,7 @@ footer{
         padding-left: 100px;
     }
     .contactFormFooter{
-        visibility: hidden;
+        display: none;
         width: 0px;
         height: 0;
         padding: none;

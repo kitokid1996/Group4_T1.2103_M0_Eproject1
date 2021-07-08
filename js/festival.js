@@ -293,7 +293,11 @@ function festivalCall(NameFestival)
         if(a==1){
             $(".sectionF").html(result);
         }
-       
+    }
+
+    function  showFestivalResponsive(){
+        var nameFestival = $("#listFestivalResponsive").val();
+        festivalCall(nameFestival);
         
     }
 
