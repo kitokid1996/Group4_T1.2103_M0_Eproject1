@@ -11,6 +11,7 @@
         <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-  theme.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./css/main_style.css">
         <link rel="icon" href="./images/logo.png">
         <link rel="stylesheet" href="./css/event.css">
@@ -19,17 +20,18 @@
 </head>
 <body>
 
-    <nav> 
-        <header id="namepage">Asian-Festival</header>
-        <a href="./index.html"><img class="logo" src="./images/Nav/logo.png" alt="logo" ></a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+    <nav class="topnav" id="myTopnav"> 
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <button type="button" >
+                <span class="glyphicon glyphicon-list"></span>
+            </button>
+        </a>
+        
+        <a href="./index.html" class="active"><img class="logo" src="./images/Nav/logo.png" alt="logo" ></a>
+        
         <ul class="menu">
             <li class="float_left"><a href="./index.html">Home</a></li>
-            <li class="float_left"><a href="./html/festival.html">Festival <span class="glyphicon glyphicon-menu-down"></span></a>
+            <li class="float_left"><a href="./html/festival.html">Festival <span class="dropdownFestival glyphicon glyphicon-menu-down"></span></a>
                 <ul class="menuSub">
                     <li><a href="./html/festivalSpring.html">Spring</a></li>
                     <li><a href="./html/festivalSummer.html">Summer</a></li>
@@ -109,8 +111,8 @@
                 </div>
             </div>
         </div> 
-        
     </form>
+        
     </nav>
 <!-- ////////////////////////////////////////   Section   //////////////////////////////////////////////////////////////////////////////// -->
 <section>
@@ -192,10 +194,10 @@
 <!-- ///////////////////////////////////////////////   Footer   ///////////////////////////////////////////////////////////////////////// -->
 
 <footer >
-    <a class="up" href="#namepage"><img src="./images/up.png" alt="up"  ></a>
+    <a class="up" href="#myTopnav"><img src="./images/up.png" alt="up"  ></a>
     <table  class="footer1">
         <tr>
-            <td>
+            <td class="contactFooter">
                 <div class="contact ">
                     <h2>Asia Festival Center</h2>
                     <p><span> <strong><span class="glyphicon glyphicon-home"></span> Address: </strong>590 Cach Mang Thang Tam, District 3, Ho Chi Minh City</span></p> 
@@ -208,7 +210,7 @@
                 </div>
             </td>
         
-            <td>
+            <td class="contactFormFooter">
                 <form action="" onsubmit="return   footer1()">
                     <table   class="table_footer1" >
                         <tr> <td class="title_table_footer1" >Please leave contact information, we will contact you later</td></tr>
@@ -242,13 +244,13 @@
         </td>
         <td>
             <p class="follow">Follow Festival ASIA</p>
-            <div>   <!-- icon at follow    -->
+        <!-- icon at follow    -->
                 <a href="#"><img src="./images/Footer/face.jpg" alt="icon" title="Facebook" ></a>
                 <a href="#"><img src="./images/Footer/youtube.png" alt="icon" title="Youtube"></a>
                 <a href="#"><img src="./images/Footer/instargram.png" alt="icon" title="Instargram"></a>
                 <a href="#"><img src="./images/Footer/twitter.png" alt="icon" title="Twitter"></a>
             </p><span class="view"> web visits: <span id="view-web"> </span> <span class="glyphicon glyphicon-eye-open"> </span></p>
-            </div>
+            
         </td>
         
     </tr>
